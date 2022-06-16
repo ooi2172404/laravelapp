@@ -16,5 +16,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//'welcome' = resources/views/welcome.blade.php
-Route::get('hello/{id?}/{pass?}', 'HelloController@index');
+Route::get('jissyu2', 'JissyuController@index');

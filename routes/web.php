@@ -18,3 +18,6 @@ Route::get('/', function () {
 
 Route::get('hello', 'HelloController@index');
 Route::post('hello', 'HelloController@post');
+
+Route::get('___(1)___', '___(2)___');
+Route::post('___(3)___', '___(4)___');

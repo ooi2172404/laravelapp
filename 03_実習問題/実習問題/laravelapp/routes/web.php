@@ -85,10 +85,10 @@ Route::post('jissyu12/update', 'Jissyu5_3Controller@update');
 Route::get('jissyu12/del', 'Jissyu5_3Controller@del');
 Route::post('jissyu12/remove', 'Jissyu5_3Controller@remove');
 //実習5_6
-Route::get('task','TaskController@index');
-Route::get('task/add','TaskController@add');
-Route::post('task/add','TaskController@create');
-Route::post('task/del','TaskController@delete');
+Route::get('task', 'TaskController@index');
+Route::get('task/add', 'TaskController@add');
+Route::post('task/add', 'TaskController@create');
+Route::post('task/del', 'TaskController@delete');
 //実習6_1.2
 Route::get('jissyu13', 'Jissyu6_1Controller@index');
 Route::post('jissyu13/find', 'Jissyu6_1Controller@find');
@@ -121,29 +121,10 @@ Route::get('jissyu7_1/{id}/del', 'Jissyu7_1Controller@del');    //Resourcefulに
 Route::get('login/auth', 'LoginController@index');
 Route::post('login/auth', 'LoginController@post');
 
-//効果測定1
-Route::get('kouka1_1', 'Kouka1_1Controller@index');
-Route::get('kouka1_2', 'kouka1_2Controller@index');
-Route::post('kouka1_2', 'kouka1_2Controller@post');
-
-//効果測定2
-Route::get('kouka2_1', 'Kouka2_1Controller@index');
-Route::post('kouka2_1/find', 'Kouka2_1Controller@find');
-
-Route::get('kouka2_2', 'Kouka2_2Controller@index');
-Route::post('kouka2_2/find', 'Kouka2_2Controller@find');
-Route::get('kouka2_2/show', 'Kouka2_2Controller@show');
-Route::get('kouka2_2/add', 'Kouka2_2Controller@add');
-Route::post('kouka2_2/create', 'Kouka2_2Controller@create');
-Route::get('kouka2_2/edit', 'Kouka2_2Controller@edit');
-Route::post('kouka2_2/update', 'Kouka2_2Controller@update');
-Route::get('kouka2_2/del', 'Kouka2_2Controller@del');
-Route::post('kouka2_2/remove', 'Kouka2_2Controller@remove');
-
 //2021/03追加分
 Route::get('Chapter3_2', 'Chapter3_1Controller@index');
-Route::get('ohara','OharaController@index');
-Route::get('cookie','JissyuCookie1@cookie');
+Route::get('ohara', 'OharaController@index');
+Route::get('cookie', 'JissyuCookie1@cookie');
 Route::get('ensyu1', 'App\Http\Controllers\HelloController@index');
 Route::get('ensyu1/show', 'App\Http\Controllers\HelloController@show');
 Route::get('ensyu1/add', 'App\Http\Controllers\HelloController@add');
